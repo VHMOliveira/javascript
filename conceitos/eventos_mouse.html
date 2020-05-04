@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <script>
+            
+            function acao1(){
+                alert('Evento onclick disparado');
+            }
+
+            function acao2(){
+                alert('Evento doble click disparado');
+            }
+
+            function acao3(){
+                alert('Evento mouse up disparado');
+            }
+
+            function acao4(){
+                alert('Evento mouse over disparado');
+            }
+
+            function acao5(){
+                alert('Evento mouse out disparado');
+            }
+
+        </script>
+        
+    </head>
+
+    <body>
+        
+        <div onclick="acao1()" style="background: #ccc; height: 150px; width: 150px; margin-bottom: 10px;">
+            onclick
+        </div>
+
+        <div ondblclick="acao2()" style="background: #ccc; height: 150px; width: 150px; margin-bottom: 10px;">
+            double click
+        </div>
+
+        <div onmouseup="acao3()" style="background: #ccc; height: 150px; width: 150px; margin-bottom: 10px;">
+            mouse up
+        </div>
+
+        <div onmouseover="acao4()" style="background: #ccc; height: 150px; width: 150px; margin-bottom: 10px;">
+            mouse over
+        </div>
+
+        <div onmouseout="acao5()" style="background: #ccc; height: 150px; width: 150px; margin-bottom: 10px;">
+            mouse out
+        </div>
+
+    </body>
+</html>

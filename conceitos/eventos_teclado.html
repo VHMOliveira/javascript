@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <script>
+            
+            function acao1(){
+                alert('tecla apertada');
+            }
+
+            function acao2(){
+                alert('tecla pressionada');
+            }
+
+            function acao3(){
+                alert('tecla liberada');
+            }
+
+        </script>
+        
+    </head>
+
+    <body>
+        
+        
+        <input onkeydown="acao1()" type="text">
+
+        <input onkeypress="acao2()" type="text">
+
+        <input onkeyup="acao3()" type="text">
+
+    </body>
+</html>
+
+<!--
+    Para associar um evento a um elemento html, ele tem que ser definido através de um atributo
+-->
