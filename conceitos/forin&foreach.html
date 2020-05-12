@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        
+        <script>
+            
+            console.log('For in');
+            var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria'];
+
+            for(var x in listaConvidados){
+                console.log('Índice ' + x + ' valor ' + listaConvidados[x]);
+            }
+            console.log('For each');
+
+            /*
+            por definição o foreach trabalha com uma função de callback:
+
+            funtion(valor, indice, array)
+            */
+            listaConvidados.forEach(function(valor, indice, array){
+                //lógica
+                console.log('indice ' + indice + ' | valor: ' + valor);
+                console.log(array);
+            })
+
+        </script>
+    </head>
+
+    <body >
+       
+    </body>
+</html>

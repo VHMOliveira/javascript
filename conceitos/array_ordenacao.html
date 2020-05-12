@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        
+        <script>
+            
+           var lista_frutas = Array();
+
+           lista_frutas[0] = "Banana";
+           lista_frutas[1] = "Maçã";
+           lista_frutas[2] = "Laranja";
+           lista_frutas[3] = "Jambo";
+
+           console.log(lista_frutas);
+
+           /*
+           método sort para ordenação alfa numérica, onde ele é específico para isso, caso utilize valores
+           numéricos será necessário utilizar uma função de ordenação
+           */
+           console.log(lista_frutas.sort());
+
+           //exemplo de ordenação de numéros
+
+           var lista_numero = Array();
+
+           lista_numero[0] = 100;
+           lista_numero[1] = 15;
+           lista_numero[2] = 21;
+           lista_numero[3] = 34;
+
+           console.log(lista_numero.sort());
+
+            //mesmo se os valores forem strings o js percebe e faz o cast
+            //função padrão para ordenação de valores numéricos utilizando  o método sort
+           function ordenanumeros(a,b){
+               return a - b;
+           }
+
+           console.log(lista_numero.sort(ordenanumeros));
+
+        </script>
+    </head>
+
+    <body >
+        
+        
+
+    </body>
+</html>
