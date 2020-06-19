@@ -13,6 +13,21 @@
             }
             var area = calcularAreaTerreno(15,25); 
             document.write('O terreno possui ' + area + ' metros quadrados');
+
+            function soma(){
+                
+                var resultado = 0;
+
+                for(var i in arguments){
+                    resultado += arguments[i];
+                }
+                return resultado;
+                /*arguments é um objeto e ao receber parametros na função, ele retorna como
+                parametros dele*/
+                //console.log(arguments);
+            }
+
+            console.log(soma(7,3,2));
             
         </script>
         
